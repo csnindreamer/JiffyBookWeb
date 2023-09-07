@@ -895,7 +895,7 @@ const applesignin = async () => {
                              style={{ transition: "all .15s ease" }}
                              onClick={signupbuttonfunction}
                            >
-                             Sign Up
+                             Sign Up NEW
                            </button>
                          </div>
    
