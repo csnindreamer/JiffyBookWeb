@@ -13,6 +13,6 @@ steps:
 
 # Use the following substitutions if needed
 substitutions:
-  _FIREBASE_TOKEN:1//0gApRyENNAB-NCgYIARAAGBASNwF-L9IrLApQo1yhz5EFoZZ2YGfdhNOpAm4CBiF7LhGEXhVCGQFIJTmq--OIOyF_geFQOAAob8g
+_FIREBASE_TOKEN: "1//0gApRyENNAB-NCgYIARAAGBASNwF-L9IrLApQo1yhz5EFoZZ2YGfdhNOpAm4CBiF7LhGEXhVCGQFIJTmq--OIOyF_geFQOAAob8g"
   _FIREBASE_PROJECT_ID: jiffybook-preprod
   _FIREBASE_PROJECT_NAME: JiffyBook-preprod
