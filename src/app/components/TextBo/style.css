@@ -1,0 +1,22 @@
+.text-bo {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .text-bo .text-2 {
+    color: #e75600;
+    font-family: "Lexend", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }

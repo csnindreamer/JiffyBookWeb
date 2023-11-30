@@ -1,0 +1,88 @@
+.input-black-BG {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+  position: relative;
+}
+
+.input-black-BG .frame {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  max-width: 300px;
+  padding: 10px;
+  position: relative;
+  width: 300px;
+}
+
+.input-black-BG .input {
+  font-family: "Lexend", Helvetica;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.input-black-BG .text-wrapper {
+  font-family: "Lexend", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.input-black-BG .variant-5 {
+  color: transparent;
+  font-weight: 700;
+}
+
+.input-black-BG .on-click {
+  color: #000000;
+  font-weight: 700;
+}
+
+.input-black-BG .value {
+  color: #000000;
+  font-weight: 700;
+}
+
+.input-black-BG .default {
+  color: #e75600;
+  font-weight: 700;
+}
+
+.input-black-BG .error {
+  color: #ff0000;
+  font-weight: 400;
+}
+
+.input-black-BG .property-1-variant-5 {
+  color: #fff4d4;
+}
+
+.input-black-BG .property-1-on-click {
+  color: #fff4d4;
+}
+
+.input-black-BG .property-1-value {
+  color: #fff4d4;
+}
+
+.input-black-BG .property-1-default {
+  color: #fff4d4;
+}
+
+.input-black-BG .property-1-error {
+  color: #ff0000;
+}

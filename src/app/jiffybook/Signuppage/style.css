@@ -1,0 +1,118 @@
+body {
+  overflow: hidden;
+}
+.header-child4 {
+  align-self: stretch;
+  position: relative;
+  background-color: #fff;
+  height: 3rem;
+  z-index: 0;
+}
+.header-child5 {
+  position: absolute;
+  margin: 0 !important;
+  top: 0.38rem;
+  left: 0.69rem;
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: cover;
+  z-index: 1;
+}
+.header9 {
+  position: relative;
+}
+.header-wrapper1 {
+  margin: 0 !important;
+  position: absolute;
+  top: 0.31rem;
+  left: 3.19rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.63rem;
+  z-index: 2;
+}
+.menu-wrapper2 {
+  margin: 0 !important;
+  position: absolute;
+  top: 0.31rem;
+  right: 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.63rem;
+  z-index: 3;
+}
+.header8 {
+  align-self: stretch;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 0.63rem;
+  z-index: 0;
+}
+.keyword-14bw2 {
+  align-self: stretch;
+  position: relative;
+}
+.keyword14bw2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.63rem;
+}
+.back-icon {
+  position: relative;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.keyword14bw-group {
+  margin: 0 !important;
+  position: absolute;
+  top: 3.63rem;
+  left: calc(50% - 150px);
+  border-radius: 20px;
+  background-color: #000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 18.75rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  gap: 1.25rem;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+.s03 {
+  position: relative;
+  width: 100%;
+  height: 64rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.63rem;
+  background-image: url("/image/s01@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: 0.88rem;
+  color: #e75600;
+  font-family: Lexend;
+}

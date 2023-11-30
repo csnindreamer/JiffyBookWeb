@@ -1,0 +1,52 @@
+.index {
+  align-items: center;
+  background-image:  url('../image/backgroundimage.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 1024px;
+  position: relative;
+}
+
+.index .header-instance {
+  align-self: stretch !important;
+  background-color: transparent !important;
+  display: flex !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+  position: fixed;
+}
+
+.index .frame-2 {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 20px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+    top: 220px;
+   left: 596px;
+}
+
+.index .design-component-instance-node {
+  flex: 0 0 auto !important;
+}
+
+.index .submit-black-BG {
+  flex: 0 0 auto !important;
+  margin-left: -4px !important;
+  margin-right: -4px !important;
+  position: relative !important;
+}
+
+.index .back-1 {
+  height: 44px !important;
+  margin-bottom: -8px !important;
+  position: relative !important;
+  width: 44px !important;
+}

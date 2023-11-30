@@ -15,7 +15,7 @@ import {LanguageContext} from './api/LanguageContext';
 
 import LoginSignup from './jiffybook/login_signup/page'
 
-
+import  Loginpage from './jiffybook/Loginpage/page';
 
 
 
@@ -181,7 +181,7 @@ function Homescreen(){
 <main>
 
 
-<LoginSignup/>
+<Loginpage/>
 
 
 

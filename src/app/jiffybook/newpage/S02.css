@@ -1,0 +1,193 @@
+body {
+    overflow: hidden;
+  }
+.header-child6 {
+    align-self: stretch;
+    position: relative;
+    background-color: #fff;
+    height: 3rem;
+    z-index: 0;
+  }
+  .header-child7 {
+    position: absolute;
+    margin: 0 !important;
+    top: 0.38rem;
+    left: 0.69rem;
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .header-wrapper3 {
+    margin: 0 !important;
+    position: absolute;
+    top: 0.31rem;
+    left: 3.19rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.63rem;
+    z-index: 2;
+  }
+  .menu-wrapper3 {
+    margin: 0 !important;
+    position: absolute;
+    top: 0.31rem;
+    right: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.63rem;
+    z-index: 3;
+  }
+  .header10 {
+    align-self: stretch;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    gap: 0.63rem;
+    z-index: 0;
+  }
+  .keyword14bw4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.63rem;
+    text-align: center;
+    font-size: 0.88rem;
+    color: #fff;
+  }
+  .input-wrapper4 {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.63rem;
+    box-sizing: border-box;
+    max-width: 18.75rem;
+  }
+  .note6 {
+    position: relative;
+    color: #fff4d4;
+    display: inline-block;
+    max-width: 18.75rem;
+  }
+  .input-black-bg6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    max-width: 18.75rem;
+  }
+  .submit-black-bg-child1 {
+    align-self: stretch;
+    position: relative;
+    border-radius: 20px;
+    background-color: #e75600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 2.25rem;
+    z-index: 0;
+  }
+  .vector-icon3 {
+    position: absolute;
+    margin: 0 !important;
+    height: 50%;
+    width: 8.04%;
+    top: 25%;
+    right: 45.96%;
+    bottom: 25%;
+    left: 46%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .submit-black-bg3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 0.63rem;
+    cursor: pointer;
+  }
+  .keyword-12bo {
+    position: relative;
+  }
+  .keyword12bo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.63rem;
+  }
+  .keyword12bo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.63rem;
+    cursor: pointer;
+  }
+  .back-icon3 {
+    position: relative;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .keyword14bw-parent2 {
+    margin: 0 !important;
+    position: absolute;
+    top: 3.63rem;
+    left: calc(50% - 150px);
+    border-radius: 20px;
+    background-color: #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 18.75rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    gap: 1.25rem;
+    z-index: 1;
+    font-size: 0.75rem;
+  }
+  .s02 {
+    position: relative;
+    width: 100%;
+    height: 64rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.63rem;
+    background-image: url("/image/s01@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: 0.88rem;
+    color: #e75600;
+    font-family: Lexend;
+  }
+  

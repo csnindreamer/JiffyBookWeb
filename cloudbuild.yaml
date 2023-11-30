@@ -16,3 +16,21 @@ substitutions:
   _FIREBASE_TOKEN: "1//0gApRyENNAB-NCgYIARAAGBASNwF-L9IrLApQo1yhz5EFoZZ2YGfdhNOpAm4CBiF7LhGEXhVCGQFIJTmq--OIOyF_geFQOAAob8g"
   _FIREBASE_PROJECT_ID: jiffybook-preprod
   _FIREBASE_PROJECT_NAME: "JiffyBook Estonia Preprod"
+
+
+
+
+gcloud projects add-iam-policy-binding 538384824023 \
+  --member=serviceAccount:jiffybook-preprod@appspot.gserviceaccount.com  \
+  --role=roles/storage.objectViewer
+
+gcloud projects add-iam-policy-binding 538384824023 \
+  --member=serviceAccount:jiffybook-preprod@appspot.gserviceaccount.com \
+  --role=roles/container.developer
+
+
+
+  gcloud iam service-accounts keys create KEY_FILE.json \
+  --iam-account=jiffybook-preprod@appspot.gserviceaccount.com
+ gcloud auth activate-service-account --key-file=KEY_FILE.json
+
