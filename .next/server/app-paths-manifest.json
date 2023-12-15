@@ -1,17 +1,17 @@
 {
-  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
   "/Placesapi/route": "app/Placesapi/route.js",
-  "/jiffybook/EmailLoginpage/page": "app/jiffybook/EmailLoginpage/page.js",
-  "/jiffybook/Loginpage/page": "app/jiffybook/Loginpage/page.js",
   "/jiffybook/Locationpage/page": "app/jiffybook/Locationpage/page.js",
-  "/jiffybook/Profilepage/page": "app/jiffybook/Profilepage/page.js",
+  "/jiffybook/Signuppage/page": "app/jiffybook/Signuppage/page.js",
+  "/jiffybook/EmailLoginpage/page": "app/jiffybook/EmailLoginpage/page.js",
   "/jiffybook/Index/page": "app/jiffybook/Index/page.js",
+  "/jiffybook/Loginpage/page": "app/jiffybook/Loginpage/page.js",
+  "/jiffybook/Profilepage/page": "app/jiffybook/Profilepage/page.js",
+  "/jiffybook/location/page": "app/jiffybook/location/page.js",
   "/jiffybook/home/page": "app/jiffybook/home/page.js",
   "/jiffybook/login_signup/page": "app/jiffybook/login_signup/page.js",
-  "/jiffybook/Signuppage/page": "app/jiffybook/Signuppage/page.js",
   "/jiffybook/newpage/page": "app/jiffybook/newpage/page.js",
-  "/jiffybook/qrcode/page": "app/jiffybook/qrcode/page.js",
   "/jiffybook/signup/page": "app/jiffybook/signup/page.js",
-  "/jiffybook/location/page": "app/jiffybook/location/page.js"
+  "/jiffybook/qrcode/page": "app/jiffybook/qrcode/page.js"
 }

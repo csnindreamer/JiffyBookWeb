@@ -89,46 +89,7 @@ const LocationPage = () => {
                 lng: position.coords.longitude
               });
 
-              import('isomorphic-fetch').then(() => {
-              fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' +  position.coords.latitude + ',' +  position.coords.longitude + '&key=' + process.env.GOOGLE_MAP_API_KEY)
-     
-        .then((response) => response.json())
-
-       .then((responseJson) => {  
-
-        console.log("responseJson",responseJson)
-        setSearchText(responseJson.results[0].formatted_address);
-        const location = {
-            address: responseJson.results[0].formatted_address,
-           // countrycode: responseJson.results[0].address_components[2].short_name,
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            countryflag :  responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].short_name,
-            pincode:responseJson.results[0].address_components[responseJson.results[0].address_components.length-1].short_name,
-            city:responseJson.results[responseJson.results.length-3].address_components[0].short_name,
-            country:responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].long_name
-          };
-          console.log('location',location)
-
-
-setFinaldata(location)
          
-
-
-
-
-
-
-
-
-         // setFinaldata
-
-
-       })  .catch(error => {
-        console.log("responseJson error",error)
-    })
-
-              })
             },
             (error) => {
               console.error('Error getting current location:', error);
@@ -169,40 +130,7 @@ setFinaldata(location)
 
 
 
-            import('isomorphic-fetch').then(() => {
-                fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' +currentPosition.lat + ',' + currentPosition.lng+ '&key=' + process.env.GOOGLE_MAP_API_KEY)
-             
-                .then((response) => response.json())
-        
-               .then((responseJson) => {  
-        
-                console.log("responseJson",responseJson)
-                setSearchText(responseJson.results[0].formatted_address);
-                
-        
-                const location = {
-                    address: responseJson.results[0].formatted_address,
-                   // countrycode: responseJson.results[0].address_components[2].short_name,
-                    latitude:currentPosition.lat,
-                    longitude:currentPosition.lng,
-                    countryflag :  responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].short_name,
-                    pincode:responseJson.results[0].address_components[responseJson.results[0].address_components.length-1].short_name,
-                    city:responseJson.results[responseJson.results.length-3].address_components[0].short_name,
-                    country:responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].long_name
-                  };
-                  console.log('location',location)
-        
-        
-        setFinaldata(location)
-        
-        
-               })  .catch(error => {
-                console.log("responseJson error",error)
-            })
-        
-        
-        
-                })
+         
 
 
 
@@ -221,7 +149,45 @@ setFinaldata(location)
         }
       };
 
+      useEffect(() => {
+        // This will log the updated currentPosition whenever it changes
+        console.log("currentPosition",currentPosition);
+        import('isomorphic-fetch').then(() => {
+            fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' +currentPosition.lat + ',' + currentPosition.lng+ '&key=' + process.env.GOOGLE_MAP_API_KEY)
+         
+            .then((response) => response.json())
+    
+           .then((responseJson) => {  
+    
+            console.log("responseJson",responseJson)
+            setSearchText(responseJson.results[0].formatted_address);
+            
+    
+            const location = {
+                address: responseJson.results[0].formatted_address,
+               // countrycode: responseJson.results[0].address_components[2].short_name,
+                latitude:currentPosition.lat,
+                longitude:currentPosition.lng,
+                countryflag :  responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].short_name,
+                pincode:responseJson.results[0].address_components[responseJson.results[0].address_components.length-1].short_name,
+                city:responseJson.results[responseJson.results.length-3].address_components[0].short_name,
+                country:responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].long_name
+              };
+              console.log('location',location)
+    
+    
+    setFinaldata(location)
+    
+    
+           })  .catch(error => {
+            console.log("responseJson error",error)
+        })
+    
+    
+    
+            })
 
+      }, [currentPosition]);
 
 
       useEffect(() => {
@@ -250,40 +216,7 @@ setFinaldata(location)
           lat: e.latLng.lat(),
           lng: e.latLng.lng()
         });
-        import('isomorphic-fetch').then(() => {
-        fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' +   e.latLng.lat() + ',' +  e.latLng.lng()+ '&key=' + process.env.GOOGLE_MAP_API_KEY)
-     
-        .then((response) => response.json())
-
-       .then((responseJson) => {  
-
-        console.log("responseJson",responseJson)
-        setSearchText(responseJson.results[0].formatted_address);
-        
-
-        const location = {
-            address: responseJson.results[0].formatted_address,
-           // countrycode: responseJson.results[0].address_components[2].short_name,
-            latitude:e.latLng.lat(),
-            longitude:e.latLng.lng(),
-            countryflag :  responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].short_name,
-            pincode:responseJson.results[0].address_components[responseJson.results[0].address_components.length-1].short_name,
-            city:responseJson.results[responseJson.results.length-3].address_components[0].short_name,
-            country:responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].long_name
-          };
-          console.log('location',location)
-
-
-setFinaldata(location)
-
-
-       })  .catch(error => {
-        console.log("responseJson error",error)
-    })
-
-
-
-        })
+    
 
       };
 
@@ -313,7 +246,7 @@ setFinaldata(location)
         
             console.log("FinaldataFinaldata",Finaldata)
         
-        
+     
             const user = auth.currentUser;
         if(user)
         {
