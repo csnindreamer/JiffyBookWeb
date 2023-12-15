@@ -5,7 +5,12 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 
 import React from "react";
 
-export const Windows = ({ className }) => {
+export const Windows = ({ className,onClick  }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
   return (
     <svg
       className={`windows ${className}`}
@@ -14,6 +19,7 @@ export const Windows = ({ className }) => {
       viewBox="0 0 56 56"
       width="56"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={handleClick}
     >
       <g className="g" filter="url(#filter0_d_134_411)">
         <circle className="circle" cx="28" cy="24" fill="white" r="24" />

@@ -1,6 +1,8 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
+
+
 // Follow this pattern to import other Firebase services
 // import { } from 'firebase/<service>';
 

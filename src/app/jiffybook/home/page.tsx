@@ -27,6 +27,11 @@ const homepage = ({ user }) => {
       <div>
     <SessionPage/>
     </div>
+
+
+
+
+
       }
 
 
