@@ -1,30 +1,16 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link';
-import { FunctionComponent, useCallback,useState,useEffect } from "react";
+import React,{ useCallback,useState,useEffect } from "react";
 import { useRouter } from 'next/navigation'
 import withAuth from '../../component/withAuth';
 import {auth,db } from '../../../../firestore';
  import SessionPage from '../../component/sessionpage'
  import "./style.css";
-const homepage = ({ user }) => {
+ const Homepage: React.FC<{ user: any }> = ({ user }) => {
 
   const router = useRouter()
   const [businessData, setbusinessData] = useState<{ strBname: any; strBrole: number; strImage: any }[]>([]);
-  // const businessData = [
-  //   { strBname: 'Resto bar', strBrole: 'Admin' },
-  //   { strBname: 'Resto bar1', strBrole: 'Admin1' },
-  //   { strBname: 'Resto bar2', strBrole: 'Admin2' },
-  //   { strBname: 'Resto bar3', strBrole: 'Admin3' },
-  //   { strBname: 'Resto bar4', strBrole: 'Admin4' },
-  //   { strBname: 'Resto bar5', strBrole: 'Admin5' },
-  //   { strBname: 'Resto bar6', strBrole: 'Admin6' },
-  //   { strBname: 'Resto bar7', strBrole: 'Admin7' },
-    
-  //   // Add more data as needed
-  // ];
-
-
   const onFrameContainer1Click = () => {
     router.back()
     //exit to first screen 
@@ -45,7 +31,7 @@ const homepage = ({ user }) => {
           console.log("snapshotdata:", snapshotdata);
   
           if (snapshotdata.size > 0) {
-            const promises = [];
+            const promises = [] as Promise<any>[]; 
   
             snapshotdata.forEach((doc) => {
               const promise = db
@@ -173,4 +159,4 @@ const homepage = ({ user }) => {
 
 
   }
-export default withAuth(homepage);
+export default withAuth(Homepage);
