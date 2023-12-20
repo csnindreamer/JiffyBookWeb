@@ -17,6 +17,8 @@ type CustomTextIputWithErrorType = {
   propFlex?: CSSProperties["flex"];
   propColor1?: CSSProperties["color"];
   onInputChange?: (value: string) => void;
+  prefixImageUrl?: string; // New prop for prefix image URL
+  prefixtext?:string;
 };
 
 const CustomTextIputWithError: FunctionComponent<CustomTextIputWithErrorType> = memo(
@@ -35,6 +37,8 @@ const CustomTextIputWithError: FunctionComponent<CustomTextIputWithErrorType> = 
     propFlex,
     propColor1,
     onInputChange,
+    prefixImageUrl, // New prop for prefix image URL
+    prefixtext,
   }) => {
     const [isPasswordVisible, setPasswordVisibility] = useState(false);
     const property1ErrorStyle: CSSProperties = useMemo(() => {
@@ -61,6 +65,17 @@ const CustomTextIputWithError: FunctionComponent<CustomTextIputWithErrorType> = 
       };
     }, [propColor, propFontWeight, propFlex]);
 
+
+    const prefixtextstyle: CSSProperties = useMemo(() => {
+        return {
+          color: propColor,
+          fontWeight: propFontWeight,
+         
+        };
+      }, [propColor, propFontWeight]);
+
+
+
     const noteStyle: CSSProperties = useMemo(() => {
       return {
         color: propColor1,
@@ -78,6 +93,17 @@ const CustomTextIputWithError: FunctionComponent<CustomTextIputWithErrorType> = 
     return (
       <div className="property-1error" style={property1ErrorStyle}>
         <div className="input-wrapper" style={frameDivStyle}>
+        {prefixImageUrl && (
+              <>
+            <img
+              className="prefix-image"
+              alt=""
+              src={prefixImageUrl}
+              style={{ marginRight: "8px" }} // Adjust the margin as needed
+            />
+            <span className="prefix-text" style={{...prefixtextstyle}}>{prefixtext}</span>
+            </>
+          )}
           <input
             type={isPasswordVisible ? "text" : type} // Use "text" if password visibility is enabled
             className="input"

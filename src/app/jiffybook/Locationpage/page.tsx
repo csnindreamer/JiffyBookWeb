@@ -83,7 +83,7 @@ const LocationPage = () => {
           navigator.geolocation.getCurrentPosition(
             (position) => {
 
-                console.log("positionposition",position)
+               // console.log("positionposition",position)
               setCurrentPosition({
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
@@ -151,7 +151,7 @@ const LocationPage = () => {
 
       useEffect(() => {
         // This will log the updated currentPosition whenever it changes
-        console.log("currentPosition",currentPosition);
+        //console.log("currentPosition",currentPosition);
         import('isomorphic-fetch').then(() => {
             fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' +currentPosition.lat + ',' + currentPosition.lng+ '&key=' + process.env.GOOGLE_MAP_API_KEY)
          
@@ -159,7 +159,7 @@ const LocationPage = () => {
     
            .then((responseJson) => {  
     
-            console.log("responseJson",responseJson)
+            //console.log("responseJson",responseJson)
             setSearchText(responseJson.results[0].formatted_address);
             
     
@@ -173,7 +173,7 @@ const LocationPage = () => {
                 city:responseJson.results[responseJson.results.length-3].address_components[0].short_name,
                 country:responseJson.results[responseJson.results.length-1].address_components[responseJson.results[responseJson.results.length-1].address_components.length-1].long_name
               };
-              console.log('location',location)
+              //console.log('location',location)
     
     
     setFinaldata(location)
@@ -194,7 +194,7 @@ const LocationPage = () => {
      if (isLoaded) {
 
             const google = window.google;
-            console.log("const google = window.google;", google.maps)
+           // console.log("const google = window.google;", google.maps)
             const autocompletion = new window.google.maps.places.AutocompleteService();
             setAutocomplete(autocompletion);
        
@@ -211,7 +211,7 @@ const LocationPage = () => {
       };
 
       const handleMapClick = (e) => {
-        console.log(" On clickor drag",e.latLng.lat(),e.latLng.lng())
+        //console.log(" On clickor drag",e.latLng.lat(),e.latLng.lng())
         setCurrentPosition({
           lat: e.latLng.lat(),
           lng: e.latLng.lng()
@@ -244,7 +244,7 @@ const LocationPage = () => {
         if(Finaldata){
             const hash = geohash.encode(Finaldata.latitude,Finaldata.longitude)
         
-            console.log("FinaldataFinaldata",Finaldata)
+           // console.log("FinaldataFinaldata",Finaldata)
         
      
             const user = auth.currentUser;

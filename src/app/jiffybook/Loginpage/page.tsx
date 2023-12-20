@@ -30,9 +30,9 @@ import { isAppleDevice } from '../../component/deviceUtils'
      const Googlelogin = async () =>{
 
 
-        console.log("Google Sign here ")
+       // console.log("Google Sign here ")
         const provider = new GoogleAuthProvider();
-        console.log("Google Sign here ",provider)
+        //console.log("Google Sign here ",provider)
         try {
           await auth.signInWithPopup(provider).then((result) => {
            
@@ -53,9 +53,9 @@ import { isAppleDevice } from '../../component/deviceUtils'
 
       const Microsoftlogin = async () =>{
 
-        console.log("microsoft Sign here ")
+      //  console.log("microsoft Sign here ")
         const provider = new OAuthProvider('microsoft.com');
-        console.log("microsoft Sign here ",provider)
+        //console.log("microsoft Sign here ",provider)
         try {
           await auth.signInWithPopup(provider).then((result) => {
             // User is signed in.
@@ -65,7 +65,7 @@ import { isAppleDevice } from '../../component/deviceUtils'
              //const credential = OAuthProvider.credentialFromResult(result);
             // const accessToken = credential.accessToken;
             // const idToken = credential.idToken;
-            console.log("microsoft Sign success",result)
+            //console.log("microsoft Sign success",result)
             Homescreen()
             //Homescreen()
           })
@@ -80,7 +80,7 @@ import { isAppleDevice } from '../../component/deviceUtils'
       const Applelogin = async () =>{
 
         const appleProvider = new OAuthProvider('apple.com');
-        console.log("appleProvider ",appleProvider)
+       // console.log("appleProvider ",appleProvider)
       
         try {
          await auth.signInWithPopup(appleProvider).then((result) => {
@@ -91,7 +91,7 @@ import { isAppleDevice } from '../../component/deviceUtils'
              //const credential = OAuthProvider.credentialFromResult(result);
             // const accessToken = credential.accessToken;
             // const idToken = credential.idToken;
-            console.log('Successfully signed in with Apple:', result);
+           // console.log('Successfully signed in with Apple:', result);
             Homescreen()
       
             //Homescreen()
@@ -103,7 +103,7 @@ import { isAppleDevice } from '../../component/deviceUtils'
 
     }
       function Homescreen(){
-        console.log("called hererererer")
+       // console.log("called hererererer")
          router.push('/jiffybook/home')
         //  setTimeout(() => {
         //    setIsLoading(false);

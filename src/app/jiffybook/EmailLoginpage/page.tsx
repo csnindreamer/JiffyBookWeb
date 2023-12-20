@@ -121,7 +121,7 @@ const EmailLogin: FunctionComponent = () => {
       if (user) {
         const emailVerified = user.emailVerified;
   
-        console.log("emailVerified", emailVerified);
+       // console.log("emailVerified", emailVerified);
   
 
         if(emailVerified == true ){
@@ -129,19 +129,25 @@ const EmailLogin: FunctionComponent = () => {
         const snapshotLocation = await db.collection('dbUser').doc(user.uid).collection('Location').doc('Default').get();
   
         if (snapshotLocation.exists) {
-          console.log('adminin', snapshotLocation);
+         // console.log('adminin', snapshotLocation);
   
           const snapshotUserData = await db.collection('dbUser').doc(user.uid).get();
-  
+          //console.log('adminin', snapshotUserData.exists);
           if (!snapshotUserData.exists) {
             setIndicatorLoading(false);
-            alert("Coming Soon Profile screen");
+           // alert("Coming Soon Profile screen");
+           window.history.replaceState({}, '', '/jiffybook/Profilepage');
+           router.push('/jiffybook/Profilepage');
           } else {
             // Home Screen
            // router.push('/jiffybook/home');
          
           window.history.replaceState({}, '', '/jiffybook/home');
          router.push('/jiffybook/home');
+
+
+    
+
             setIndicatorLoading(false);
           }
         } else {

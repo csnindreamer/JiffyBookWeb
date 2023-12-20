@@ -140,7 +140,7 @@ else{
 
 
 
-console.log("emailtextchnage isValid", EmailValue,PasswordValue,RepeatPasswordValue)
+//console.log("emailtextchnage isValid", EmailValue,PasswordValue,RepeatPasswordValue)
 
    
 

@@ -35,4 +35,13 @@
     color: #ff0000;
     font-family: Lexend;
   }
-  
+  .prefix-image {
+    width: 35px; /* Set the desired width for the prefix image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Adjust the margin as needed */
+   
+  }
+  .prefix-text{
+    margin-right: 2px;
+
+  }  

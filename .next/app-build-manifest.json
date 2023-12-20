@@ -1,7 +1,7 @@
 {
   "pages": {
     "/layout": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -10,7 +10,7 @@
       "static/chunks/app/layout-109e80cd92d5c581.js"
     ],
     "/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -19,47 +19,12 @@
       "static/chunks/755-79290f3a72e74aca.js",
       "static/chunks/214-031f40b919903caa.js",
       "static/chunks/54-e7c7da7acc99d1dd.js",
-      "static/chunks/421-8b544f621c50a975.js",
+      "static/chunks/421-0e74f9a90ae54b6d.js",
       "static/css/94662c5f7a46a6dc.css",
       "static/chunks/app/page-a344ea9e28b6a9dd.js"
     ],
-    "/jiffybook/Locationpage/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
-      "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
-      "static/chunks/961-46f351c890a5538c.js",
-      "static/chunks/main-app-082ed319ed1d8eaf.js",
-      "static/chunks/cacdea1d-54ac473e2211ee75.js",
-      "static/chunks/c0300065-26083cd4927d3bc1.js",
-      "static/chunks/71d7772d-cf47683532276bf8.js",
-      "static/chunks/755-79290f3a72e74aca.js",
-      "static/chunks/app/jiffybook/Locationpage/page-417e7e96493c8be9.js"
-    ],
-    "/jiffybook/Signuppage/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
-      "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
-      "static/chunks/961-46f351c890a5538c.js",
-      "static/chunks/main-app-082ed319ed1d8eaf.js",
-      "static/chunks/cacdea1d-54ac473e2211ee75.js",
-      "static/chunks/c0300065-26083cd4927d3bc1.js",
-      "static/chunks/755-79290f3a72e74aca.js",
-      "static/chunks/214-031f40b919903caa.js",
-      "static/css/c7416c71702c15cf.css",
-      "static/chunks/app/jiffybook/Signuppage/page-d04775dd72cea2d6.js"
-    ],
-    "/jiffybook/EmailLoginpage/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
-      "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
-      "static/chunks/961-46f351c890a5538c.js",
-      "static/chunks/main-app-082ed319ed1d8eaf.js",
-      "static/chunks/cacdea1d-54ac473e2211ee75.js",
-      "static/chunks/c0300065-26083cd4927d3bc1.js",
-      "static/chunks/755-79290f3a72e74aca.js",
-      "static/chunks/214-031f40b919903caa.js",
-      "static/css/a95985f06a6997fd.css",
-      "static/chunks/app/jiffybook/EmailLoginpage/page-9ac4649d38545647.js"
-    ],
     "/jiffybook/Index/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -69,20 +34,55 @@
       "static/css/56578300679f0b0f.css",
       "static/chunks/app/jiffybook/Index/page-b0242d96616b039a.js"
     ],
-    "/jiffybook/Loginpage/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+    "/jiffybook/EmailLoginpage/page": [
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
       "static/chunks/cacdea1d-54ac473e2211ee75.js",
       "static/chunks/c0300065-26083cd4927d3bc1.js",
       "static/chunks/755-79290f3a72e74aca.js",
-      "static/chunks/421-8b544f621c50a975.js",
+      "static/chunks/214-031f40b919903caa.js",
+      "static/css/94c4a512c373f742.css",
+      "static/chunks/app/jiffybook/EmailLoginpage/page-e5d9a3a54b4f597b.js"
+    ],
+    "/jiffybook/Locationpage/page": [
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
+      "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
+      "static/chunks/961-46f351c890a5538c.js",
+      "static/chunks/main-app-082ed319ed1d8eaf.js",
+      "static/chunks/cacdea1d-54ac473e2211ee75.js",
+      "static/chunks/c0300065-26083cd4927d3bc1.js",
+      "static/chunks/71d7772d-cf47683532276bf8.js",
+      "static/chunks/755-79290f3a72e74aca.js",
+      "static/chunks/app/jiffybook/Locationpage/page-d351bf93089c9111.js"
+    ],
+    "/jiffybook/Loginpage/page": [
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
+      "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
+      "static/chunks/961-46f351c890a5538c.js",
+      "static/chunks/main-app-082ed319ed1d8eaf.js",
+      "static/chunks/cacdea1d-54ac473e2211ee75.js",
+      "static/chunks/c0300065-26083cd4927d3bc1.js",
+      "static/chunks/755-79290f3a72e74aca.js",
+      "static/chunks/421-0e74f9a90ae54b6d.js",
       "static/css/25595ea20193c1af.css",
       "static/chunks/app/jiffybook/Loginpage/page-85b48173e4497839.js"
     ],
+    "/jiffybook/Signuppage/page": [
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
+      "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
+      "static/chunks/961-46f351c890a5538c.js",
+      "static/chunks/main-app-082ed319ed1d8eaf.js",
+      "static/chunks/cacdea1d-54ac473e2211ee75.js",
+      "static/chunks/c0300065-26083cd4927d3bc1.js",
+      "static/chunks/755-79290f3a72e74aca.js",
+      "static/chunks/214-031f40b919903caa.js",
+      "static/css/753523eb80978acb.css",
+      "static/chunks/app/jiffybook/Signuppage/page-4f9b3c106b9d6ebb.js"
+    ],
     "/jiffybook/Profilepage/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -90,11 +90,13 @@
       "static/chunks/c0300065-26083cd4927d3bc1.js",
       "static/chunks/2e3a737e-c24aebe6a5384a2d.js",
       "static/chunks/755-79290f3a72e74aca.js",
+      "static/chunks/214-031f40b919903caa.js",
       "static/chunks/27-dc7e840962be6a73.js",
-      "static/chunks/app/jiffybook/Profilepage/page-8029b4618c02dcaf.js"
+      "static/css/d394084260bb8e7b.css",
+      "static/chunks/app/jiffybook/Profilepage/page-955be3077c6fdf35.js"
     ],
     "/jiffybook/location/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -107,7 +109,7 @@
       "static/chunks/app/jiffybook/location/page-4435e6b526d65705.js"
     ],
     "/jiffybook/home/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -116,10 +118,11 @@
       "static/chunks/2e3a737e-c24aebe6a5384a2d.js",
       "static/chunks/755-79290f3a72e74aca.js",
       "static/chunks/27-dc7e840962be6a73.js",
-      "static/chunks/app/jiffybook/home/page-433bede730ff8738.js"
+      "static/css/4e95ac82885a302c.css",
+      "static/chunks/app/jiffybook/home/page-9c812c7ff9e7cee2.js"
     ],
     "/jiffybook/login_signup/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -132,16 +135,16 @@
       "static/css/bc536431352d601b.css",
       "static/chunks/app/jiffybook/login_signup/page-e230c38cc40f5043.js"
     ],
-    "/jiffybook/newpage/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+    "/jiffybook/qrcode/page": [
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
-      "static/css/2520e19fee9369b9.css",
-      "static/chunks/app/jiffybook/newpage/page-44654dec708eeffa.js"
+      "static/chunks/44643dd5-8d96e9a54c9bb00c.js",
+      "static/chunks/app/jiffybook/qrcode/page-fa2f103487383eee.js"
     ],
     "/jiffybook/signup/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
@@ -153,13 +156,13 @@
       "static/css/d647ea645c9b4d39.css",
       "static/chunks/app/jiffybook/signup/page-b0b88fd8f3768dd6.js"
     ],
-    "/jiffybook/qrcode/page": [
-      "static/chunks/webpack-e5216cd86b19c9a6.js",
+    "/jiffybook/newpage/page": [
+      "static/chunks/webpack-d98f8fa5dd05b37e.js",
       "static/chunks/bce60fc1-763ebe96e3da6c3a.js",
       "static/chunks/961-46f351c890a5538c.js",
       "static/chunks/main-app-082ed319ed1d8eaf.js",
-      "static/chunks/44643dd5-8d96e9a54c9bb00c.js",
-      "static/chunks/app/jiffybook/qrcode/page-fa2f103487383eee.js"
+      "static/css/2520e19fee9369b9.css",
+      "static/chunks/app/jiffybook/newpage/page-44654dec708eeffa.js"
     ]
   }
 }
