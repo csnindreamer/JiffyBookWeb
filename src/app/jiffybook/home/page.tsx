@@ -7,22 +7,50 @@ import withAuth from '../../component/withAuth';
 import {auth,db } from '../../../../firestore';
  import SessionPage from '../../component/sessionpage'
  import "./style.css";
- const Homepage: React.FC<{ user: any }> = ({ user }) => {
 
+
+
+ const Homepage: React.FC<{ user: any }> = ({ user }) => {
   const router = useRouter()
-  const [businessData, setbusinessData] = useState<{ strBname: any; strBrole: number; strImage: any }[]>([]);
+
+  const [businessData, setbusinessData] = useState<{ strBname: any; strBrole: number; strImage: any ; strBid:any}[]>([]);
   const onFrameContainer1Click = () => {
     router.back()
     //exit to first screen 
   };
 
 
+const BusinessDashbord =(item,index)=>{
+ 
+  console.log("item,index:", item,index);
+
+
+
+  console.log('item.strBid:', item.strBid);
+  const dataObject = { strBid: item.strBid, strBname: item.strBname, strBrole: item.strBrole, strImage: item.strLogoURL };
+  const dataString = JSON.stringify(dataObject);
+  const encodedDataString = encodeURIComponent(dataString);
+  router.push(`/jiffybook/BusinessDashbord?data=${encodedDataString}`, { scroll: false });
+  // router.push('/jiffybook/BusinessDashbord');
+  // router.push({
+  //   pathname: '/jiffybook/BusinessDashbord',
+  //   query: { strBid: item.strBid, dataKey: 'yourDataValue' },
+  // });
+ // router.push(`/jiffybook/BusinessDashbord?strBid=${item.strBid}&dataKey=yourDataValue`, undefined, { scroll: false });
+
+
+};
+
+
+
+
 
 
   useEffect(() => {
+  
     console.log("useruserdata:", user);
   
-    if (user) {
+    if (user  && user.uid !== '' ) {
       db.collection("dbBuser")
         .doc(user.email)
         .collection("Business")
@@ -45,6 +73,7 @@ import {auth,db } from '../../../../firestore';
                       strBname: bname.data()?.strBname,
                       strBrole: doc.data()?.strBrole,
                       strImage: bname.data()?.strLogoURL,
+                      strBid:doc?.id
                     };
                     return finalbusinessdata;
                   }
@@ -68,8 +97,11 @@ import {auth,db } from '../../../../firestore';
           }
         })
         .catch((error) => {
-          console.log("error:", error);
+          console.log("error buser:", error);
         });
+    }
+    else{
+      console.log('Session expired, logging out...');
     }
   }, [user]);
   
@@ -87,7 +119,7 @@ import {auth,db } from '../../../../firestore';
   return (
 
     <div>
-    {user ?
+    {user && user.uid !== '' ? (
 
   
 
@@ -108,7 +140,7 @@ import {auth,db } from '../../../../firestore';
       <div className="businesscard-list">
       {businessData && (
       businessData.map((item, index) => (
-        <div key={index} className="businesscard-parent">
+        <div key={index} className="businesscard-parent" onClick={() => BusinessDashbord(item, index)}>
                 {/* <GoogleIcon iconText="/google11.svg" /> */}
                 <img
               className="prefix-image"
@@ -132,10 +164,10 @@ import {auth,db } from '../../../../firestore';
 {/* end of tag */}
       </div>
 
-      : 
-      <div>
-    <SessionPage/>
-    </div>
+     ) : ( <div>
+      <SessionPage/>
+      </div>)
+     
 
 
 

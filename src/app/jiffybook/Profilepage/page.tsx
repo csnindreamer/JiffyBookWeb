@@ -243,7 +243,7 @@ else {
    // const user = auth.currentUser;
    
 
-    if(user)
+   if (user  && user.uid !== '' )
 
     {
       //  console.log("user:", user);
@@ -343,7 +343,7 @@ if(snapshotdata.exists)
          //  const user = auth.currentUser;
    
 
-           if(user)
+         if (user  && user.uid !== '' )
        
            {
 
@@ -385,7 +385,7 @@ if(snapshotdata.exists)
   return (
 
     <div>
-    {user ?
+  {user && user.uid !== '' ? (
         <div className="s05">
       <div className="header12">
         <div className="header-child8" />
@@ -588,10 +588,10 @@ propLeft1="46%"
 
  
 
-      : 
-      <div>
+   ) :( <div>
     <SessionPage/>
-    </div>
+    </div>) 
+     
     // <div   style={{
        
     //     fontSize: '18px',
