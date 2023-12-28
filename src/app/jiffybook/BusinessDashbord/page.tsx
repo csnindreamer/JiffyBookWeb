@@ -24,7 +24,7 @@ const BusinessDashbord= ({ user }) => {
   
     const [receivedData, setReceivedData] = useState(null);
     const [BarchartData, setBarChartData] = useState<{
-        labelsbar: string[];
+      labels: string[];
         datasets: { label: string; data: number[]; backgroundColor: string }[];
       } | null>(null);
       const [piechartData, setpieChartData] = useState<{
@@ -292,8 +292,8 @@ else{
                             fill: true,
                             label: 'numCLV',
                             data: data4,
-                            backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                            borderColor: 'rgb(53, 162, 235)',
+                            backgroundColor: ['rgba(255, 99, 132, 0.5)'],
+                            borderColor: ['rgb(53, 162, 235)'],
                           },
                          
                        
@@ -403,20 +403,18 @@ null } */}
 
       {BarchartData ?
     
-<div  style={{
+<div style={{
   width: '100%',
-  maxWidth: '600px', // Set a maximum width for larger screens
+  maxWidth: '600px',
   height: '100%',
   minHeight: '300px',
   minWidth: '300px',
-  margin: '0 auto', // Center the container horizontally
-
-  // Media query for smaller screens
-  '@media (max-width: 600px)': {
+  margin: '0 auto',
+  '@media (maxWidth: 600px)': {
     minHeight: '200px',
     minWidth: '200px',
   },
-}}>
+} as React.CSSProperties}>
 <Bar options={options} data={BarchartData} />
 </div>
 
@@ -432,20 +430,18 @@ null } */}
 
 
 { linechartData  ?
-   <div  style={{
+  <div style={{
     width: '100%',
-    maxWidth: '600px', // Set a maximum width for larger screens
+    maxWidth: '600px',
     height: '100%',
     minHeight: '300px',
     minWidth: '300px',
-    margin: '0 auto', // Center the container horizontally
-  
-    // Media query for smaller screens
-    '@media (max-width: 600px)': {
+    margin: '0 auto',
+    '@media (maxWidth: 600px)': {
       minHeight: '200px',
       minWidth: '200px',
     },
-  }}>
+  } as React.CSSProperties}>
 <Line options={optionslinechart} data={linechartData} />
 </div>
    :

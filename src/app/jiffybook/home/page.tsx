@@ -30,7 +30,7 @@ const BusinessDashbord =(item,index)=>{
   const dataObject = { strBid: item.strBid, strBname: item.strBname, strBrole: item.strBrole, strImage: item.strLogoURL };
   const dataString = JSON.stringify(dataObject);
   const encodedDataString = encodeURIComponent(dataString);
-  router.push(`/jiffybook/BusinessDashbord?data=${encodedDataString}`, { scroll: false });
+  router.push(`/jiffybook/AdminDashboardSlotPerson?data=${encodedDataString}`, { scroll: false });
   // router.push('/jiffybook/BusinessDashbord');
   // router.push({
   //   pathname: '/jiffybook/BusinessDashbord',
