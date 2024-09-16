@@ -3,7 +3,7 @@ body {
   }
 .index {
     align-items: center;
-    background-image: url('../image/backgroundimage.png');
+    background-image: url('https://storage.googleapis.com/jiffybook_public_files/WebApp%20Images/wallpaper-2070691_1920.png');
     background-position: 50% 50%;
     background-size: cover;
     display: flex;

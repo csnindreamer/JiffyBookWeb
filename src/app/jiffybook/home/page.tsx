@@ -19,7 +19,9 @@ import {auth,db } from '../../../../firestore';
     //exit to first screen 
   };
 
-
+const GoToAddBusiness = ()=>{
+  router.push('/jiffybook/AddBusiness');
+}
 const BusinessDashbord =(item,index)=>{
  
   console.log("item,index:", item,index);
@@ -29,8 +31,10 @@ const BusinessDashbord =(item,index)=>{
   console.log('item.strBid:', item.strBid);
   const dataObject = { strBid: item.strBid, strBname: item.strBname, strBrole: item.strBrole, strImage: item.strLogoURL };
   const dataString = JSON.stringify(dataObject);
-  const encodedDataString = encodeURIComponent(dataString);
-  router.push(`/jiffybook/AdminDashboardSlotPerson?data=${encodedDataString}`, { scroll: false });
+  const obfuscatedData = obfuscateData(dataString);
+  const encodedDataString = encodeURIComponent(obfuscatedData);
+  router.push(`/jiffybook/Test?data=${encodedDataString}`, { scroll: true });
+   //router.push(`/jiffybook/AdminDashboardSlotPerson?data=${encodedDataString}`, { scroll: false });
   // router.push('/jiffybook/BusinessDashbord');
   // router.push({
   //   pathname: '/jiffybook/BusinessDashbord',
@@ -43,7 +47,9 @@ const BusinessDashbord =(item,index)=>{
 
 
 
-
+  const obfuscateData =(data) =>  {
+  return btoa(unescape(encodeURIComponent(data)));
+}
 
 
   useEffect(() => {
@@ -142,12 +148,12 @@ const BusinessDashbord =(item,index)=>{
       businessData.map((item, index) => (
         <div key={index} className="businesscard-parent" onClick={() => BusinessDashbord(item, index)}>
                 {/* <GoogleIcon iconText="/google11.svg" /> */}
-                <img
+                {/* <img
               className="prefix-image"
               alt=""
               src={item.strImage}
               style={{ marginRight: "8px" }} // Adjust the margin as needed
-            />
+            /> */}
           <div className="keyword14bo1">
             <b className="keyword-14bo1">{item.strBname}</b>
           </div>
@@ -160,6 +166,20 @@ const BusinessDashbord =(item,index)=>{
     </div>
 
 
+
+    <div className="businesscard-parent" onClick={() => GoToAddBusiness()}>
+            
+             
+          <div className="keyword14bo1">
+            <b className="keyword-14bo1">Create Business</b>
+          </div>
+         
+        </div>
+
+
+
+
+ 
 
 {/* end of tag */}
       </div>

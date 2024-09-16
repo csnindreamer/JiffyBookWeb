@@ -8,7 +8,7 @@
 }
 
 .header .rectangle {
-  background-color: #ffffff;
+  background-color: #0000;
   height: 48px;
   position: fixed;
   width: 100%;
@@ -57,7 +57,7 @@
 }
 
 .header .rectangle {
-  background-color: #ffffff;
+  background-color: #0000;
   height: 48px;
   position: fixed;
   width: 100%;

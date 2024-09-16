@@ -631,7 +631,7 @@ null}
 
 
        <div className="keyword14bo">
-       <b className="value-24bo">Pending: {numBstatusData}-{numCompleteData}</b>
+       <b className="value-24bo">Pending: {numBstatusData-numCompleteData}</b>
      </div>
 
     :

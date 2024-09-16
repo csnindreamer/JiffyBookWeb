@@ -1,7 +1,7 @@
 .rectangle-div {
     align-self: stretch;
     position: relative;
-    background-color: #fff;
+    background-color: #0000;
     height: 3rem;
     z-index: 0;
   }
@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.63rem;
-    background-image: url("/image/s01@3x.png");
+    background-image: url("https://storage.googleapis.com/jiffybook_public_files/WebApp%20Images/wallpaper-2070691_1920.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

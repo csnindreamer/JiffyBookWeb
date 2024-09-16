@@ -1,4 +1,3 @@
-
 'use client'
 import Link from 'next/link';
 import Head from 'next/head';
@@ -12,7 +11,7 @@ import Button from '@mui/material/Button';
 import {FaFacebookF,FaGoogle} from 'react-icons/fa'
 import './styles.css';
 import {LanguageContext} from './api/LanguageContext';
-
+import 'leaflet/dist/leaflet.css';
 import LoginSignup from './jiffybook/login_signup/page'
 
 import  Loginpage from './jiffybook/Loginpage/page';

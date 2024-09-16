@@ -1,0 +1,1121 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+html, body {
+  overflow-x: hidden;
+ }
+.keyword-14bo {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.header-new,
+.keyword14bo,
+.keyword14bo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.keyword14bo {
+  flex: 1;
+  align-items: flex-start;
+}
+.header-new,
+.keyword14bo1 {
+  align-items: flex-end;
+  text-align: right;
+}
+.header-new {
+  align-self: stretch;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: row;
+  align-items: center;
+  padding: 0.313rem 0.625rem;
+  gap: 0.625rem;
+  text-align: left;
+  font-size: 0.875rem;
+  color: #e75600;
+  font-family: "Lexend Deca";
+}
+.keyword24bw {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.keyword14bw,
+.keyword24bw {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.value {
+  align-self: stretch;
+  position: relative;
+  font-size: 0.75rem;
+  font-family: "Lexend Deca";
+  color: gray;
+  text-align: center;
+}
+.smalltextbuttonwhite {
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem;
+  background-color: #000;
+  border-radius: 20px;
+  border-right: 2px solid gray;
+  border-left: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.value1 {
+  position: relative;
+  font-size: 0.75rem;
+  font-family: "Lexend Deca";
+  color: #e75600;
+  text-align: center;
+}
+.smalltextbuttonwhiteactive {
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem;
+  background-color: #000;
+  border-radius: 20px;
+  border-right: 2px solid #e75600;
+  border-left: 2px solid #e75600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.smalltextbuttonwhite-parent {
+  margin: 0;
+  align-self: stretch;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.625rem;
+}
+.error,
+.error1 {
+  align-self: stretch;
+}
+.error1 {
+  margin: 0;
+  position: relative;
+  font-weight: 700;
+}
+.error {
+  border-radius: 10px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0.313rem;
+  font-size: 0.625rem;
+  color: #000;
+}
+.keyword14bw-container,
+.keyword14bw-parent,
+.keyword24bw-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.keyword14bw-parent {
+  align-self: stretch;
+  padding: 0.313rem 0;
+  gap: 0.625rem;
+}
+.keyword14bw-container,
+.keyword24bw-parent {
+  box-sizing: border-box;
+}
+.keyword14bw-container {
+  width: 100%;
+  padding: 0.313rem 0;
+  gap: 0.625rem;
+  max-width: 22.5rem;
+}
+.keyword24bw-parent {
+  width: 25rem;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 1.563rem;
+  gap: 3.125rem;
+}
+.frame-parent,
+.text-input-yellowbg-child {
+  display: flex;
+  font-family: "Lexend Deca";
+  font-size: 0.875rem;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.frame-parent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6.25rem;
+  text-align: left;
+  color: #fff;
+}
+.text-input-yellowbg-child {
+  border: 0;
+  background-color: #000;
+  outline: 0;
+  border-radius: 5px;
+  border-right: 2px solid #e75600;
+  border-left: 2px solid #e75600;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.625rem;
+  font-weight: 700;
+  color: #e75600;
+}
+.keyword-10bw {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.error-wrapper {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: red;
+  align-items: flex-start;
+  padding: 0 0.313rem;
+  color: #000;
+}
+.error-wrapper,
+.keyword24bw-container,
+.text-input-yellowbg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text-input-yellowbg {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0.313rem 0;
+  gap: 0.625rem;
+}
+.keyword24bw-container {
+  width: 25rem;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 1.563rem;
+  gap: 3.125rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.frame-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6.25rem;
+  text-align: left;
+  font-size: 0.625rem;
+  color: #fff;
+  font-family: "Lexend Deca";
+}
+.vector-icon {
+  width: 2.25rem;
+  position: relative;
+  height: 2.25rem;
+  object-fit: cover;
+}
+.submitbuttonorange {
+  cursor: pointer;
+  border: 0;
+  padding: 0.313rem;
+  background-color: #000;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-top: 2px solid #e75600;
+  border-bottom: 2px solid #e75600;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 18.75rem;
+}
+.gallery-details,
+.submitbuttonorange-wrapper {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.submitbuttonorange-wrapper {
+align-self:stretch;
+  flex-shrink: 0;
+  padding: 1.563rem 0;
+
+}
+.gallery-details {
+  width: 100%;
+  position: relative;
+  padding: 0 0 3.125rem;
+  box-sizing: border-box;
+  gap: 3.125rem;
+  background-image: url("https://storage.googleapis.com/jiffybook_public_files/WebApp%20Images/wallpaper-2070691_1920.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0;
+  min-height: 64rem;
+}
+.gallery-details.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+/* info css start */
+.value-24bw5 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.keyword24bw5,
+.text-input-yellowbg-child4 {
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+.keyword24bw5 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.text-input-yellowbg-child4 {
+  border: 0;
+  background-color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 0.875rem;
+  outline: 0;
+  border-radius: 5px;
+  border-right: 2px solid #e75600;
+  border-left: 2px solid #e75600;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.625rem;
+  font-weight: 700;
+  color: #e75600;
+}
+.keyword-10bw10 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.keyword10bw10 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error16 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-weight: 700;
+}
+.error-wrapper5,
+.text-input-yellowbg7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.error-wrapper5 {
+  border-radius: 10px;
+  background-color: red;
+  padding: 0 0.313rem;
+  color: #000;
+}
+.text-input-yellowbg7 {
+  padding: 0.313rem 0;
+  gap: 0.625rem;
+}
+.frame-item,
+.text-input3 {
+  align-self: stretch;
+}
+.text-input3 {
+  border: 0;
+  background-color: transparent;
+  font-family: "Lexend Deca";
+  font-size: 0.875rem;
+  outline: 0;
+  position: relative;
+  font-weight: 700;
+  color: gray;
+  text-align: left;
+}
+.gallery-location {
+  margin: 0;
+}
+.note2 {
+  align-self: stretch;
+  position: relative;
+}
+.keyword24bw-parent2,
+.text-input-disabled-yellowbg1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text-input-disabled-yellowbg1 {
+  align-self: stretch;
+  border-radius: 5px;
+  background-color: #000;
+  border-right: 2px solid gray;
+  border-left: 2px solid gray;
+  align-items: flex-start;
+  padding: 0.625rem;
+  gap: 0.313rem;
+}
+.keyword24bw-parent2 {
+  width: 25rem;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 1.563rem;
+  gap: 3.125rem;
+  max-width: 25rem;
+  text-align: left;
+  font-size: 0.625rem;
+  color: #fff;
+  font-family: "Lexend Deca";
+}
+
+/* info css end */
+/* old design css  */
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+}
+  .header-inner {
+      align-self: stretch;
+      position: relative;
+      background-color: #0000;
+      height: 3rem;
+      z-index: 0;
+    }
+    .ellipse-icon {
+      position: absolute;
+      margin: 0 !important;
+      top: 0.38rem;
+      left: 0.69rem;
+      border-radius: 50%;
+      width: 2.25rem;
+      height: 2.25rem;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .header3 {
+      position: relative;
+    }
+    .header-container {
+      margin: 0 !important;
+      position: absolute;
+      top: 0.31rem;
+      left: 3.19rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0.63rem;
+      z-index: 2;
+    }
+    .menu-container {
+      margin: 0 !important;
+      position: absolute;
+      top: 0.31rem;
+      right: 0rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0.63rem;
+      cursor: pointer;
+      z-index: 3;
+    }
+    .header2 {
+      align-self: stretch;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      gap: 0.63rem;
+      z-index: 0;
+    }
+  
+    .gallery-schema {
+        width: 100%;
+        position: relative;
+        background-color: #151515;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.563rem 0rem;
+        letter-spacing: normal;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #e75600;
+        font-family: "Lexend Deca";
+    
+    }
+    .frame-keyword-container {
+    display: flex;
+background-color: red;
+overflow-x: auto; 
+flex-direction: row;
+width: 100%;
+height: 50px;
+flex-wrap: nowrap;
+    }
+  
+    .keyword24bo {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .keyword-10bw {
+      align-self: stretch;
+      position: relative;
+    }
+    .bg-color-frame,
+    .keyword10bw {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.625rem;
+      color: #fff;
+    }
+    .bg-color-frame {
+      justify-content: flex-start;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #e75600;
+    }
+    .keyword-14bw {
+      margin: 0;
+      align-self: stretch;
+      position: relative;
+      font-size: inherit;
+      font-weight: 700;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      justify-content:  flex-start;
+    }
+    .keyword14bw {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:  flex-start;
+    }
+    .value {
+      position: relative;
+      font-size: 0.625rem;
+      font-family: "Lexend Deca";
+      color: #e75600;
+      text-align: center;
+    }
+    .Selectedvalue {
+      position: relative;
+      font-size: 0.625rem;
+      font-family: "Lexend Deca";
+      color: #fff;
+      text-align: center;
+    }
+    .smalltextbuttonwhite {
+      cursor: pointer;
+      border: 0;
+      padding: 0.625rem;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width:200px
+    }
+  
+    .selected {
+      background-color: #e75600;
+      color: white;
+      cursor: pointer;
+      border: 0;
+      padding: 0.625rem;
+     
+      border-radius: 20px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width:200px
+
+
+
+
+
+    }
+    .keyword-b-w-frame,
+    .small-text-button-whi-f-r-a-m {
+     
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+
+    }
+    .small-text-button-whi-f-r-a-m {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 0 0.625rem;
+      padding: 0.625rem;
+   
+     
+    }
+
+
+    .catselection{
+      display: flex; /* Ensure each button is displayed inline */
+      flex-wrap: nowrap;
+      flex-direction: row;
+     
+      width: 100%;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      padding: 0.625rem;
+ 
+    }
+    .keyword-b-w-frame {
+      flex-direction: column;
+      width: 100%;
+    
+      display: flex; /* Ensure each button is displayed inline */
+      flex-wrap: nowrap;
+      max-width: 24.5rem;
+      
+      
+    }
+  
+    .text-input-frame {
+      align-self: stretch;
+      position: relative;
+      font-size: 0.75rem;
+    }
+    .note {
+      color: #000;
+    }
+    .error,
+    .note {
+      align-self: stretch;
+      position: relative;
+    }
+    .text-input-white-frame,
+    .text-input-whitebg {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .text-input-white-frame {
+      align-self: stretch;
+      background-color: red;
+      padding: 0 0.313rem;
+      color: #fff;
+    }
+    .text-input-whitebg {
+      width: 86.875rem;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+      padding: 0.313rem 0.625rem;
+      box-sizing: border-box;
+    }
+    .text-input {
+      align-self: stretch;
+      position: relative;
+      font-size: 0.75rem;
+    }
+    .note1 {
+      color: #000;
+    }
+    .error1,
+    .note1 {
+      align-self: stretch;
+      position: relative;
+    }
+    .error-wrapper,
+    .text-input-whitebg1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .error-wrapper {
+      align-self: stretch;
+      background-color: red;
+      padding: 0 0.313rem;
+      color: #fff;
+    }
+    .text-input-whitebg1 {
+      width: 86.875rem;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+      padding: 0.313rem 0.625rem;
+      box-sizing: border-box;
+    }
+    .text-input1 {
+      align-self: stretch;
+      position: relative;
+      font-size: 0.75rem;
+    }
+    .note2 {
+      color: #000;
+    }
+    .error2,
+    .note2 {
+      align-self: stretch;
+      position: relative;
+    }
+    .error-container {
+      align-self: stretch;
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 0.313rem;
+      color: #fff;
+    }
+    .text-input-disabled-yellow-b-g,
+    .text-input-whitebg2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      box-sizing: border-box;
+    }
+    .text-input-whitebg2 {
+      width: 86.875rem;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+      align-items: flex-start;
+      padding: 0.313rem 0.625rem;
+    }
+
+    .text-input-wrapper {
+      align-self: stretch;
+      border-radius: 5px;
+      background-color: #fff4d4;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0.313rem;
+    }
+
+
+    .text-input-disabled-yellow-b-g {
+      width: 90rem;
+      overflow-x: auto;
+      flex-shrink: 0;
+      align-items: center;
+      padding: 0 1.563rem;
+      gap: 1.563rem 0;
+      max-width: 100%;
+      font-size: 0.625rem;
+      color: #e75600;
+    }
+    .frame-empty-arrow-right-keywor {
+      height: 2.25rem;
+      width: 2.25rem;
+      position: relative;
+    }
+  
+    .submitbuttongrey {
+      align-self: stretch;
+      border-radius: 25px;
+      background-color: #808080;
+      /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0.313rem;
+    }
+    .gallery-info,
+    .submit-button-orange-instance {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .submit-button-orange-instance {
+      align-self: stretch;
+      padding: 0 1.563rem;
+    }
+    .gallery-info {
+      width: 100%;
+      position: relative;
+      background-color: #151515;
+      overflow-y: auto;
+      gap: 1.563rem 0;
+      letter-spacing: normal;
+      text-align: left;
+      font-size: 0.875rem;
+      color: #fff;
+      font-family: "Lexend Deca";
+    }
+
+    .text-input8 {
+      border: none;
+      background-color: transparent;
+      align-items: center;
+      justify-content: center;
+    
+      font-weight: bold;
+    
+    }
+    .text-input7 {
+      border: none;
+      background-color: transparent;
+      align-self: stretch;
+      position: relative;
+      font-weight: bold;
+    
+    }
+    .text-input-wrapper3 {
+      align-self: stretch;
+      border-radius: 5px;
+      background-color: #fff4d4;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+      display: flex;
+      flex-direction: column;
+     
+      padding: 0.313rem;
+    }
+    .keyword-10bw9 {
+      position: relative;
+      color:#ffff
+    }
+    .keyword10bw9 {
+      padding: 0rem 0.313rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .error-wrapper3 {
+      align-self: stretch;
+      background-color: #ff0000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0rem 0.313rem;
+    }
+    .text-input-yellowbg1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content:flex-start;
+      padding: 0.313rem 0rem;
+      max-width: 24.5rem;
+    }
+
+    .frame-item {
+      align-self: stretch;
+      display: flex;
+      width:100%
+    }
+    .text-input10 {
+      align-self: stretch;
+      position: relative;
+    }
+    .note3 {
+      align-self: stretch;
+      position: relative;
+      font-size: 0.625rem;
+      color: #000;
+    }
+    .text-input-disabled-whitebg1 {
+     width: 100%;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0.313rem 0.625rem;
+    }
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 450px) {
+      .value-24bo {
+        font-size: 1.188rem;
+      }
+    }
+    
+    .keyword-14bw6 {
+      margin: 0;
+      align-self: stretch;
+      position: relative;
+      font-size: inherit;
+      font-weight: 700;
+      font-family: inherit;
+    }
+    .keyword14bw6 {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .value17 {
+      position: relative;
+      font-size: 0.75rem;
+      font-family: "Lexend Deca";
+      color: #e75600;
+      text-align: center;
+    }
+    .smalltextbuttonwhiteactive5 {
+      cursor: pointer;
+      border: none;
+      padding: 0.625rem;
+      background-color: #000;
+      border-radius: 20px;
+      border-right: 2px solid #e75600;
+      border-left: 2px solid #e75600;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .value19 {
+      align-self: stretch;
+      position: relative;
+      font-size: 0.75rem;
+      font-family: "Lexend Deca";
+      color: #808080;
+      text-align: center;
+    }
+    .smalltextbuttonwhite10 {
+      cursor: pointer;
+      border: none;
+      padding: 0.625rem;
+      background-color: #000;
+      border-radius: 20px;
+      border-right: 2px solid #808080;
+      border-left: 2px solid #808080;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .smalltextbuttonwhiteactive-group {
+      margin: 0;
+      align-self: stretch;
+      overflow-x: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0.625rem;
+    }
+    .error21 {
+      margin: 0;
+      align-self: stretch;
+      position: relative;
+      font-weight: 700;
+    }
+    .error20 {
+      align-self: stretch;
+      border-radius: 10px;
+      background-color: #ff0000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0rem 0.313rem;
+      font-size: 0.625rem;
+      color: #000;
+    }
+    .keyword14bw-parent3 {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.313rem 0rem;
+      gap: 0.625rem;
+      text-align: left;
+      font-size: 0.875rem;
+      color: #fff;
+      font-family: "Lexend Deca";
+    }
+    
+     
+    .arrow-right-icon {
+      width: 1.5rem;
+      position: relative;
+      height: 1.5rem;
+      overflow: hidden;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .keyword-12bo1 {
+      margin: 0;
+      align-self: stretch;
+      position: relative;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: "Lexend Deca";
+      color: #e75600;
+      text-align: left;
+    }
+    .keyword12bo1 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .arrow-right-parent {
+      cursor: pointer;
+      border: none;
+      padding: 0.313rem 0.625rem;
+      background-color: #000;
+      align-self: stretch;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.313rem;
+    }
+    .text-input4 {
+      border: none;
+      background-color: transparent;
+      font-family: "Lexend Deca";
+      font-size: 0.875rem;
+      outline: none;
+      align-self: stretch;
+      position: relative;
+      font-weight: 700;
+      color: #808080;
+      text-align: left;
+    }
+    .note3 {
+      margin: 0;
+      align-self: stretch;
+      position: relative;
+    }
+    .text-input-disabled-yellowbg2 {
+      align-self: stretch;
+      border-radius: 5px;
+      background-color: #000;
+      border-right: 2px solid #808080;
+      border-left: 2px solid #808080;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0.625rem;
+      gap: 0.313rem;
+    }
+    .error23 {
+      margin: 0;
+      align-self: stretch;
+      position: relative;
+      font-weight: 700;
+    }
+    .error22 {
+      align-self: stretch;
+      border-radius: 10px;
+      background-color: #ff0000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0rem 0.313rem;
+      color: #000;
+    }
+    .frame-parent4 {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0.313rem 0rem;
+      gap: 0.625rem;
+      text-align: left;
+      font-size: 0.625rem;
+      color: #fff;
+      font-family: "Lexend Deca";
+    }
+    
+      

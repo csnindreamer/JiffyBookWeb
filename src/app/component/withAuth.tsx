@@ -26,13 +26,13 @@ const withAuth = (WrappedComponent) => {
       const timeSinceLastRefresh = currentTime - lastRefreshTime.current;
       const minTimeBetweenRefreshes = 5 * 60 * 1000; // 5 minutes in milliseconds
 
-      console.log('timeSinceLastRefresh', timeSinceLastRefresh);
+     // console.log('timeSinceLastRefresh', timeSinceLastRefresh);
 
       if (timeSinceLastRefresh >= minTimeBetweenRefreshes) {
         lastRefreshTime.current = currentTime;
 
         const unsubscribe = auth.onAuthStateChanged((authUser) => {
-          console.log('onAuthStateChanged', authUser);
+         // console.log('onAuthStateChanged', authUser);
           if (!isButtonRefresh) {
             setUser({
               uid: authUser?.uid ?? '', // Use empty string as a default value
@@ -50,7 +50,7 @@ const withAuth = (WrappedComponent) => {
 
         return unsubscribe;
       } else {
-        console.log('Skipped refresh due to time');
+     //   console.log('Skipped refresh due to time');
         return () => {}; // Return an empty function for cleanup since we're not subscribing.
       }
     };

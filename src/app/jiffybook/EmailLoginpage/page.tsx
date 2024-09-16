@@ -260,12 +260,15 @@ null :
         propColor1="#fff4d4"
         errortext={EmailErrorValue}
         inputValue={EmailValue} onInputChange={handleEmailChange}
+ 
+        
       />
 }
 
 {!translations  ?
 null :
       <CustomTextIputWithError
+  
         inputText={translations.Password}
         type="password"
         propTop="unset"
@@ -279,7 +282,8 @@ null :
         propFlex="unset"
         propColor1="#fff4d4"
         errortext={PasswordErrorValue}
-        inputValue={PasswordValue} onInputChange={handlePasswordChange}
+        inputValue={PasswordValue} 
+        onInputChange={handlePasswordChange} 
       />
 
 }

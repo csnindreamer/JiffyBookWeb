@@ -5,7 +5,7 @@ import geohash from "ngeohash";
 import {auth,db } from '../../../../firestore';
 import { useRouter } from 'next/navigation'
 const LIBRARIES: ("places")[] = ['places'];
-const LocationPage = () => {
+const LocationPageAll = () => {
     const router = useRouter()
   const [data, setData] = useState("No result");
   const [searchText, setSearchText] = useState('');
@@ -229,72 +229,69 @@ const LocationPage = () => {
         setSearchText('');
       };
 
-      const handleSave = () => {
+    //   const handleSave = () => {
 
 
-        //    address
-        //    city
-        //    country
-        //    countryflag
-        //    latitude
-        //    longitude
-        //    pincode
+    //     //    address
+    //     //    city
+    //     //    country
+    //     //    countryflag
+    //     //    latitude
+    //     //    longitude
+    //     //    pincode
                
         
-        if(Finaldata){
-            const hash = geohash.encode(Finaldata.latitude,Finaldata.longitude)
+    //     // if(Finaldata){
+    //     //     const hash = geohash.encode(Finaldata.latitude,Finaldata.longitude)
         
-           // console.log("FinaldataFinaldata",Finaldata)
-        
-     
-            const user = auth.currentUser;
-        if(user)
-        {
-            db.collection('dbUser').doc(user.uid).collection('Location').doc('Default').set({
-                strClongitude: Finaldata.longitude,
-                 strClatitude:Finaldata.latitude,
-               strCaddress: Finaldata.address,
-               strCcountry:Finaldata.country,
-               strCcity:Finaldata.city,
-               strCpincode:Finaldata.pincode,
-               strCcountryCode:Finaldata.countryflag,
-               strLocName:"Default",
-               geohash:hash,
-               }).then(success=> {
-        
-                window.history.replaceState({}, '', '/jiffybook/Profilepage');
-                router.push('/jiffybook/Profilepage'); 
-                  
-        
-             })
-             .catch(function(error) {
-              
-                 console.error("Error adding document: ", error);
-                 
-             });
-        
-        }
-        
-        
-        
-        
-        
-        
-           
-           // alert("final update")
-        
-        
-        
-        
-        }
-        else{
-           
-        }
+    //     //    // console.log("FinaldataFinaldata",Finaldata)
+    //     // Finaldata.longitude,
+    //     //     Finaldata.latitude,
+    //     //      Finaldata.address,
+    //     //  Finaldata.country,
+    //     //     Finaldata.city,
+    //     //        Finaldata.pincode,
+    //     //        Finaldata.countryflag,
+ 
         
                 
-              };
+    //           };
               
         
+
+
+
+    const handleSave = () => {
+        if (Finaldata) {
+          const FinalLocationData = {
+            address: Finaldata.address,
+            latitude: Finaldata.latitude,
+            longitude: Finaldata.longitude,
+            countryflag: Finaldata.countryflag,
+            pincode: Finaldata.pincode,
+            city: Finaldata.city,
+            country: Finaldata.country,
+          };
+          
+
+          // const data = 'someDatacheking'; // Replace with your actual data
+          localStorage.setItem('LocationData', JSON.stringify(FinalLocationData)); 
+  
+  
+  
+          router.back();
+
+         
+        }
+
+      
+
+      };
+
+
+
+
+
   return (
     <LoadScript
     googleMapsApiKey={process.env.GOOGLE_MAP_API_KEY || 'YOUR_DEFAULT_API_KEY'}
@@ -462,7 +459,7 @@ Save
 
 
 
-export default LocationPage;
+export default LocationPageAll;
 
 
 
