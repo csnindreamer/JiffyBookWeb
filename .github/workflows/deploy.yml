@@ -19,7 +19,7 @@ jobs:
         node-version: '19.x'  # Use the node version your project needs
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --force
 
     - name: Build JiffyBook app
       run: npm run build
