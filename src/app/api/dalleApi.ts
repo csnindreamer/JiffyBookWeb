@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 
+
 const DALLE_API_ENDPOINT = 'https://api.openai.com/v1/davinci';
 
 const generateImage = async (description) => {
@@ -13,7 +13,7 @@ const generateImage = async (description) => {
       {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + API_KEY,
+          'Authorization': 'Bearer ' 
         },
       }
     );
