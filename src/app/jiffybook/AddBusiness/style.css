@@ -60,6 +60,7 @@
   
     .gallery-schema {
         width: 100%;
+        min-height:  64rem;
         position: relative;
         background-color: #151515;
         overflow-y: auto;
@@ -67,12 +68,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        gap: 1.563rem 0rem;
+        gap: 2.563rem 0rem;
         letter-spacing: normal;
         text-align: center;
         font-size: 0.875rem;
         color: #e75600;
         font-family: "Lexend Deca";
+        background-image: url("https://storage.googleapis.com/jiffybook_public_files/WebApp%20Images/wallpaper-2070691_1920.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
     }
   
     .business-segment-schema-button {
