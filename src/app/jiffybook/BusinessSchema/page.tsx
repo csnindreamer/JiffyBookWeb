@@ -35,14 +35,14 @@ const BusinessSchema = (props) => {
           <div className="gallery-schema-frame41">
             <div className="gallery-schema-keyword14bb1">
               <span className="gallery-schema-text16">
-                <span>Select a pre-built schema testing</span>
+                <span>Select a pre-built schema with testing</span>
               </span>
             </div>
           </div>
           <div className="gallery-schema-frame50">
             <div className="gallery-schema-keyword14bb2">
               <span className="gallery-schema-text18">
-                <span>Create a custom schema CI/CD</span>
+                <span>Create a custom schema with CI/CD</span>
               </span>
             </div>
           </div>
