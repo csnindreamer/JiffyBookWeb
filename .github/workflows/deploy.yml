@@ -17,7 +17,6 @@ jobs:
       run: |
        echo "NODE_ENV=production" >> .env
         echo "GOOGLE_MAP_API_KEY=${{ secrets.API_KEY }}" >> .env
-        echo "OTHER_SECRET=${{ secrets.OTHER_SECRET }}" >> .env
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
@@ -25,10 +24,7 @@ jobs:
         node-version: '19.x'  # Use the node version your project needs
 
     - name: Install dependencies
-      run: npm install --force
-      
-    - name: Update Browserslist DB
-      run: npx update-browserslist-db@latest
+      run: npm install --force 
 
     - name: Build JiffyBook app
       run: npm run build
