@@ -1,7 +1,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import { getVertexAI, getGenerativeModel } from "firebase/vertexai-preview";
+//import { getVertexAI, getGenerativeModel } from "firebase/vertexai-preview";
 
 // Follow this pattern to import other Firebase services
 // import { } from 'firebase/<service>';
@@ -78,9 +78,11 @@ var EE = {
  // export const app = initializeApp(EE);
 // export const db = getFirestore(app);
 const firebaseApp =firebase.initializeApp(EE);
-const vertexAI = getVertexAI(firebaseApp);
+//const vertexAI = getVertexAI(firebaseApp);
+const model = firebase.initializeApp(EE);
 
-const model = getGenerativeModel(vertexAI, { model: "gemini-1.5-flash" });
+
+//const model = getGenerativeModel(vertexAI, { model: "gemini-1.5-flash" });
  const db = firebase.firestore();
  const auth = firebase.auth();
  //const storage = firebase.storage();
