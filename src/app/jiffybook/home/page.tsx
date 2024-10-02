@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React,{ useCallback,useState,useEffect } from "react";
 import { useRouter } from 'next/navigation'
 import withAuth from '../../component/withAuth';
-import {auth,db } from '../../../../firestore';
+import {auth,db,model } from '../../../../firestore';
  import SessionPage from '../../component/sessionpage'
  import "./style.css";
 
@@ -52,8 +52,40 @@ const BusinessDashbord =(item,index)=>{
 }
 
 
+async function fetchGeminiData() {
+  const chat = model.startChat({
+    history: [
+      {
+        role: "user",
+        parts: [{ text: "Hello, I have 2 dogs in my house." }],
+      },
+      {
+        role: "model",
+        parts: [{ text: "Great to meet you. What would you like to know?" }],
+      },
+    ],
+    generationConfig: {
+      maxOutputTokens: 100,
+    },
+  });
+
+  const msg = "How many paws are in my house?";
+  const result = await chat.sendMessageStream(msg);
+
+  let text = '';
+  for await (const chunk of result.stream) {
+    const chunkText = chunk.text();
+    console.log(chunkText);
+    text += chunkText;
+  }
+}
+
+
+
+
+
   useEffect(() => {
-  
+   
     console.log("useruserdata:", user);
   
     if (user  && user.uid !== '' ) {

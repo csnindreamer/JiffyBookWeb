@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'JiffyBook',
   description: 'JiffyBook',
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
